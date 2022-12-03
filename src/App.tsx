@@ -5,7 +5,7 @@ import "@fontsource/roboto/700.css";
 import { Typography, Container, Paper, CssBaseline, Stack } from "@mui/material";
 import FileSelect from "./FileSelect";
 import GenerateForm from "./GenerateForm";
-import { useState, useCallback } from "react";
+import { useState, useCallback, Fragment } from "react";
 import CanvasImage from "./CanvasImage";
 
 enum Stage { FILE, FORM }
@@ -40,12 +40,14 @@ function App() {
       onCancel={handleCancel}
     />;
 
-  return (
+  return <Fragment>
+    <div className="backdrop"></div>
     <Container
       maxWidth="md"
       sx={{
         marginTop: 10,
-        marginBottom: 10
+        marginBottom: 10,
+        position: "relative"
       }}
     >
       <CssBaseline/>
@@ -71,7 +73,7 @@ function App() {
         </Stack>
       </a>
     </Container>
-  );
+  </Fragment>;
 
 }
 
