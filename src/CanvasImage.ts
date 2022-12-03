@@ -57,8 +57,8 @@ export default class CanvasImage {
 
       img.onload = () => {
         URL.revokeObjectURL(img.src);
-        const tempCanvas = new OffscreenCanvas(img.width, img.height);
-        const ctx = tempCanvas.getContext("2d") as OffscreenCanvasRenderingContext2D;
+        const tempCanvas = document.createElement("canvas");
+        const ctx = tempCanvas.getContext("2d") as CanvasRenderingContext2D;
         if (ctx === null) return;
         ctx.drawImage(img, 0, 0);
         resolve(
