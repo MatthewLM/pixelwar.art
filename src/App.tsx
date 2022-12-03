@@ -2,7 +2,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import { Typography, Container, Paper, CssBaseline } from "@mui/material";
+import { Typography, Container, Paper, CssBaseline, Stack } from "@mui/material";
 import FileSelect from "./FileSelect";
 import GenerateForm from "./GenerateForm";
 import { useState, useCallback } from "react";
@@ -57,6 +57,19 @@ function App() {
       }}>
         {content}
       </Paper>
+      <a
+        href="https://github.com/MatthewLM/pixelwar.art"
+        title="GitHub Repository (Opens in new tab)"
+        target="_blank"
+      >
+        <Stack
+          direction="row"
+          justifyContent="center"
+          marginTop={4}
+        >
+          <img alt="GitHub Repo" src="./GitHub-Mark-32px.png" />
+        </Stack>
+      </a>
     </Container>
   );
 
