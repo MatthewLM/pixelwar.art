@@ -64,7 +64,7 @@ export default function downloadCsv(
     // Add Donation to end of first CSV
     // Placed at end to avoid problems with amounts on some versions of the
     // flutter app
-    csvs[0] += `${DONATION_ADDR}, ${donation}, "Immutable.place img2csv Donation"`;
+    csvs[0] += `${DONATION_ADDR}, ${donation}, "PixelWar.art Donation"`;
   }
 
   const nameStart = `${img.name}_${startX}_${startY}`;

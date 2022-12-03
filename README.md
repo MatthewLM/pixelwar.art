@@ -11,7 +11,7 @@ Any donations are highly appreciated.
 
 `pc1qkh79pe0vjr90llf4nz6kgq2eusnc86k0dxsv4u`
 
-![pc1qkh79pe0vjr90llf4nz6kgq2eusnc86k0dxsv4u](donationQR.png "Immutable.place img2csv Donation")
+![pc1qkh79pe0vjr90llf4nz6kgq2eusnc86k0dxsv4u](donationQR.png "PixelWar.art Donation")
 
 
 
