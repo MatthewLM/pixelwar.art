@@ -79,7 +79,7 @@ export default function downloadCsv(
     const zip = new JSZip();
     blobs.forEach(
       (blob, i) => zip.file(
-        `${nameStart}.part${String(i+1).padStart(2, "0")}.csv`,
+        `${nameStart}.part${String(i+1).padStart(3, "0")}.csv`,
         blob
       )
     );

@@ -3,7 +3,7 @@ import Section from "./Section";
 import { useState, useCallback, Fragment } from "react";
 import CanvasImage from "./CanvasImage";
 
-const MAX_SIDE = 100;
+const MAX_SIDE = 250;
 
 /* eslint-disable max-lines-per-function */
 function FileSelect(

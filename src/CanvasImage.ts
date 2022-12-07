@@ -58,6 +58,8 @@ export default class CanvasImage {
       img.onload = () => {
         URL.revokeObjectURL(img.src);
         const tempCanvas = document.createElement("canvas");
+        tempCanvas.width = img.width;
+        tempCanvas.height = img.height;
         const ctx = tempCanvas.getContext("2d") as CanvasRenderingContext2D;
         if (ctx === null) return;
         ctx.drawImage(img, 0, 0);
