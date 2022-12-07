@@ -120,6 +120,7 @@ function GenerateForm(
             defaultValue=""
             optional={true}
             onChanged={setDonation}
+            helperText="All donations are much appreciated"
           />
         </Grid> : null
         }

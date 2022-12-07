@@ -59,6 +59,9 @@ function App() {
       }}>
         {content}
       </Paper>
+      <Typography variant="body1" align="center" marginTop={2}>
+        Donations: pc1qkh79pe0vjr90llf4nz6kgq2eusnc86k0dxsv4u
+      </Typography>
       <a
         href="https://github.com/MatthewLM/pixelwar.art"
         title="GitHub Repository (Opens in new tab)"
@@ -67,7 +70,7 @@ function App() {
         <Stack
           direction="row"
           justifyContent="center"
-          marginTop={4}
+          marginTop={3}
         >
           <img alt="GitHub Repo" src="./GitHub-Mark-32px.png" />
         </Stack>

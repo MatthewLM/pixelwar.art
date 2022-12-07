@@ -4,12 +4,13 @@ import {ChangeEvent, useCallback, useState} from "react";
 /* eslint-disable max-lines-per-function */
 function CoinInput(
   {
-    label, defaultValue, optional, onChanged
+    label, defaultValue, optional, onChanged, helperText
   } : {
     label: string,
     defaultValue: string | null,
     optional: boolean,
-    onChanged: (value: string | null) => void
+    onChanged: (value: string | null) => void,
+    helperText?: string | null
   }
 ) {
 
@@ -68,7 +69,7 @@ function CoinInput(
     fullWidth
     onChange={handleChange}
     error={error !== null}
-    helperText={error}
+    helperText={error ?? helperText}
   />;
 
 }
